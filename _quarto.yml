@@ -12,6 +12,7 @@ website:
         href: index.qmd
       - text: "About me"
         href: about.qmd
+      - text: ssets/report.qmd
 
 format:
   html:
