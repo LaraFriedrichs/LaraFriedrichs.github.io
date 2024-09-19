@@ -43,12 +43,21 @@ Make sure identations are correct!
 --> 
 
 ```{python}
-filePath = https://github.com/Hezel2000/GeoCosmoChemDataAndTools/blob/main/csv/Banda%20Arc.csv
 
-with open filePath as f:
-  fileString = f.read()
-f.close()
+import pandas as pd
+from ipywidgets import interact
+import matplotlib.pyplot as plt
 
-display(FileString)
+
+
+filePath = "https://raw.githubusercontent.com/Hezel2000/GeoCosmoChemDataAndTools/refs/heads/main/csv/Banda%20Arc.csv"
+
+df = pd.read_csv(filePath)
+
+def create_plot(el1,el2):
+    p = plt.scatter(df[el1],df[el2])
+    plt.title(f"{el2} against {el1}")
+    return p
+create_plot('Si','Mg')
 
 ```
