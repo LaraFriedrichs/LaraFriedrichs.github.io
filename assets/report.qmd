@@ -2,7 +2,7 @@
 title: "Random report"
 author: 
   - name: Lara Friedrichs
-    email: Lara.Friedrichs@example.org
+  - email: Lara.Friedrichs@example.org
     
 ---
 
@@ -58,6 +58,7 @@ def create_plot(el1,el2):
     p = plt.scatter(df[el1],df[el2])
     plt.title(f"{el2} against {el1}")
     return p
+
 create_plot('Si','Mg')
 
 ```
