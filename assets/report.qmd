@@ -1,10 +1,8 @@
 ---
 title: "Random report"
 author: 
-  - name: Jane Doe
-    orcid: 0000-0001-2345-6789
-    corresponding: true
-    email: Jane.Doe@example.org
+  - name: Lara Friedrichs
+    email: Lara.Friedrichs@example.org
     
 ---
 
